@@ -2,15 +2,15 @@ function Home() {
   function handleClick(){
     console.log("button clicked",)
   }
-  function handleclickAgain(name,e){
-    console.log("hello" + name,e.target)
+  function handleclickAgain(name){
+    console.log("hello" + name)
   }
     return (
       <div className="home">
         <h2>Homepage</h2>
         <button onClick={handleClick}> clickme </button>
-        <button onClick={(e) => {
-          handleclickAgain("pirate",e)
+        <button onClick={() => {
+          handleclickAgain("pirate")
         }}> clickmeAgain </button>
       </div>
     );
