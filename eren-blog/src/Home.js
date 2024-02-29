@@ -1,16 +1,14 @@
 import { useState } from 'react';
 function Home() {
 
-  const [name, setName] = useState("pirate");
-  function handleClick(){
-    setName("ussop");
- 
-  }
+  const [blogs, setBlogs] = useState([
+    {title:"my first blog",body:"lorem ipsum lot amet...", author:pirate, id:1  }
+    {title:"my first blog",body:"lorem ipsum lot amet...", author:pirate, id:1  }
+    {title:"my first blog",body:"lorem ipsum lot amet...", author:pirate, id:1  }
+  ]);
+  
     return (
       <div className="home">
-        <h2>Homepage</h2>
-        <p>{name}</p>
-        <button onClick={handleClick}> clickme </button>
          
       </div>
     );
